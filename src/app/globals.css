@@ -85,7 +85,12 @@
     @apply bg-background text-foreground;
   }
   html {
-    scroll-padding-top: 4rem; /* Adjust based on your navbar height */
+    scroll-behavior: smooth;
+    /*scroll-padding-top: 4rem;*/
+  }
+  li {
+    list-style-type: none;
+    padding: 0;
   }
 }
 

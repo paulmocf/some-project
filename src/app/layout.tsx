@@ -34,6 +34,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
       >
+          {/*TODO: not nice, needed for scroll directly on top*/}
+          <div id="home"></div>
           <Header/>
           {children}
           <TailwindIndicator/>
