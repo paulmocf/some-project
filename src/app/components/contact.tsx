@@ -13,7 +13,7 @@ export function ContactSection() {
                             Ready to Launch Your Next Promotional Campaign?
                         </h2>
                         <p className="md:text-xl">
-                            Get in touch with our team to discuss your promotional marketing needs. We'll help you
+                            Get in touch with our team to discuss your promotional marketing needs. We will help you
                             create a campaign
                             that drives results.
                         </p>
