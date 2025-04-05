@@ -16,7 +16,7 @@ export default function Header() {
         {name: "Home", href: "#home"},
         {name: "Services", href: "#services"},
         {name: "About", href: "#about"},
-        {name: "Case Studies", href: "#case-studies"},
+        // {name: "Case Studies", href: "#case-studies"},
         {name: "Contact", href: "#contact"},
     ]
 
@@ -62,9 +62,9 @@ export default function Header() {
                     ))}
                 </nav>
 
-                <div className="hidden md:flex items-center gap-2">
+                <div className="hidden md:flex items-center gap-5">
                     <ThemeToggler/>
-                    <Button>Get an offer</Button>
+                    <Button><a href="#contact">Contact</a></Button>
                 </div>
 
                 {/* Mobile Navigation */}
