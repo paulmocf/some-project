@@ -36,7 +36,7 @@ export function AboutSection() {
                     </div>
                     <div className="flex justify-center">
                         <Image
-                            src="/window.svg?height=400&width=600"
+                            src="/some-project/window.svg?height=400&width=600"
                             alt="Firma X team working on promotional campaigns"
                             width={600}
                             height={400}
