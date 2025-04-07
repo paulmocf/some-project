@@ -1,38 +1,42 @@
+"use client"
+
 import {Award, BarChart4, Code, Gift, Megaphone, ShieldCheck} from "lucide-react"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
+import {useTranslation} from "react-i18next";
 
 export function ServicesSection() {
+    const {t} = useTranslation()
+
     const services = [
         {
             icon: <Megaphone className="h-10 w-10 text-blue-600"/>,
-            title: "Campaign Design",
-            description:
-                "Strategic planning and creative design of promotional campaigns tailored to your brand and objectives.",
+            title: t("services.items.campaignDesign.title"),
+            description: t("services.items.campaignDesign.description"),
         },
         {
             icon: <Code className="h-10 w-10 text-blue-600"/>,
-            title: "Promo Websites",
-            description: "Custom-built websites for promo code submissions, user registrations, and campaign participation.",
+            title: t("services.items.promoWebsites.title"),
+            description: t("services.items.promoWebsites.description"),
         },
         {
             icon: <ShieldCheck className="h-10 w-10 text-blue-600"/>,
-            title: "Validation & Verification",
-            description: "Secure systems for validating promo codes from receipts or product packaging.",
+            title: t("services.items.validation.title"),
+            description: t("services.items.validation.description"),
         },
         {
             icon: <Gift className="h-10 w-10 text-blue-600"/>,
-            title: "Prize Management",
-            description: "End-to-end prize fulfillment, from winner selection to delivery logistics.",
+            title: t("services.items.prizeManagement.title"),
+            description: t("services.items.prizeManagement.description"),
         },
         {
             icon: <BarChart4 className="h-10 w-10 text-blue-600"/>,
-            title: "Analytics & Reporting",
-            description: "Comprehensive campaign analytics and performance reporting to measure ROI.",
+            title: t("services.items.analytics.title"),
+            description: t("services.items.analytics.description"),
         },
         {
             icon: <Award className="h-10 w-10 text-blue-600"/>,
-            title: "Compliance Management",
-            description: "Ensuring all promotional activities comply with relevant laws and regulations.",
+            title: t("services.items.compliance.title"),
+            description: t("services.items.compliance.description"),
         },
     ]
 
@@ -42,11 +46,9 @@ export function ServicesSection() {
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our
-                                Services</h2>
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">                                {t("services.title")}</h2>
                             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                                We offer a complete suite of promotional marketing solutions to help your brand stand
-                                out.
+                                {t("services.description")}
                             </p>
                         </div>
                     </div>

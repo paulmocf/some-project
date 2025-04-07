@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "about": "Despre noi",
+    "caseStudies": "Studii de caz",
+    "contact": "Contact",
+    "getQuote": "Cere ofertă",
+    "toggleTheme": "Schimbă tema"
+  },
+  "language": {
+    "switchToEnglish": "English",
+    "switchToRomanian": "Română"
+  },
+  "hero": {
+    "title": "Creăm campanii promoționale captivante!",
+    "description": "Firma X se specializează în proiectarea și gestionarea campaniilor de marketing promoțional care aduc rezultate. De la concept la execuție, ne ocupăm de toate aspectele nevoilor dvs. promoționale.",
+    "startCampaign": "Începe campania",
+    "learnMore": "Află mai multe"
+  },
+  "services": {
+    "title": "Serviciile noastre",
+    "description": "Oferim o suită completă de soluții de marketing promoțional pentru a ajuta marca dvs. să iasă în evidență.",
+    "items": {
+      "campaignDesign": {
+        "title": "Design campanii",
+        "description": "Planificare strategică și design creativ al campaniilor promoționale adaptate mărcii și obiectivelor dvs."
+      },
+      "promoWebsites": {
+        "title": "Site-uri promoționale",
+        "description": "Site-uri personalizate pentru trimiterea codurilor promoționale, înregistrări utilizatori și participare la campanii."
+      },
+      "validation": {
+        "title": "Validare și verificare",
+        "description": "Sisteme sigure pentru validarea codurilor promoționale de pe bonuri sau ambalaje de produse."
+      },
+      "prizeManagement": {
+        "title": "Gestionare premii",
+        "description": "Gestionare completă a premiilor, de la selectarea câștigătorilor la logistica de livrare."
+      },
+      "analytics": {
+        "title": "Analiză și raportare",
+        "description": "Analiză cuprinzătoare a campaniei și raportare a performanței pentru a măsura ROI."
+      },
+      "compliance": {
+        "title": "Conformitate",
+        "description": "Asigurarea că toate activitățile promoționale respectă legile și reglementările relevante."
+      }
+    }
+  },
+  "about": {
+    "title": "Despre Firma X",
+    "subtitle": "Partenerul tău în excelență promoțională",
+    "description": "Firma X este o agenție de marketing promoțional de top, specializată în crearea de campanii captivante care stimulează participarea clienților și loialitatea față de marcă. Combinăm strategia creativă cu expertiza tehnică pentru a oferi experiențe promoționale fără probleme.",
+    "benefits": {
+      "expertise": "10+ ani de expertiză în marketing promoțional",
+      "campaigns": "Campanii de succes pentru peste 200 de mărci",
+      "creativeTeam": "Echipă creativă premiată",
+      "techIntegration": "Integrare tehnologică fără probleme",
+      "campaignManagement": "Gestionare cuprinzătoare a campaniilor",
+      "support": "Suport dedicat pe tot parcursul campaniei dvs."
+    }
+  },
+  "contact": {
+    "title": "Gata să lansați următoarea campanie promoțională?",
+    "description": "Contactați echipa noastră pentru a discuta despre nevoile dvs. de marketing promoțional. Vă vom ajuta să creați o campanie care aduce rezultate.",
+    "form": {
+      "title": "Cere o ofertă",
+      "firstName": "Prenume",
+      "lastName": "Nume",
+      "email": "Email",
+      "company": "Companie",
+      "message": "Mesaj",
+      "messagePlaceholder": "Spuneți-ne despre nevoile dvs. pentru campania promoțională",
+      "submit": "Trimite cererea"
+    }
+  }
+}
+

@@ -10,7 +10,7 @@ export function ThemeToggler() {
     const {theme, setTheme} = useTheme()
 
     return (
-        <Button variant="outline" size="icon"
+        <Button variant="ghost" size="icon"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             <Sun
                 className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
