@@ -6,18 +6,21 @@ import React, {useState} from "react";
 import {ThemeToggler} from "@/app/components/ThemeToggler";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {Menu} from "lucide-react";
+import '@/lib/i18n/i18n'
+import {useTranslation} from "react-i18next";
+import {LanguageSwitcher} from "@/app/components/language-switcher";
 
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
-
+    const {t} = useTranslation();
 
     const navItems = [
-        {name: "Home", href: "#home"},
-        {name: "Services", href: "#services"},
-        {name: "About", href: "#about"},
+        {name: t("navbar.home"), href: "#home"},
+        {name: t("navbar.services"), href: "#services"},
+        {name: t("navbar.about"), href: "#about"},
         // {name: "Case Studies", href: "#case-studies"},
-        {name: "Contact", href: "#contact"},
+        {name: t("navbar.contact"), href: "#contact"},
     ]
 
     function getOnClick() {
@@ -64,6 +67,7 @@ export default function Header() {
 
                 <div className="hidden md:flex items-center gap-5">
                     <ThemeToggler/>
+                    <LanguageSwitcher/>
                     <Button><a href="#contact">Contact</a></Button>
                 </div>
 
@@ -91,6 +95,7 @@ export default function Header() {
 
                         <div className="flex items-center justify-center ">
                             <ThemeToggler/>
+                            <LanguageSwitcher/>
                         </div>
                     </SheetContent>
                 </Sheet>

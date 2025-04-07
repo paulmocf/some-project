@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "caseStudies": "Case Studies",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "toggleTheme": "Toggle theme"
+  },
+  "language": {
+    "switchToEnglish": "English",
+    "switchToRomanian": "Română"
+  },
+  "hero": {
+    "title": "We Create Engaging Promotional Campaigns!",
+    "description": "Firma X specializes in designing and managing promotional marketing campaigns that drive results. From concept to execution, we handle every aspect of your promotional needs.",
+    "startCampaign": "Start Your Campaign",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a complete suite of promotional marketing solutions to help your brand stand out.",
+    "items": {
+      "campaignDesign": {
+        "title": "Campaign Design",
+        "description": "Strategic planning and creative design of promotional campaigns tailored to your brand and objectives."
+      },
+      "promoWebsites": {
+        "title": "Promo Websites",
+        "description": "Custom-built websites for promo code submissions, user registrations, and campaign participation."
+      },
+      "validation": {
+        "title": "Validation & Verification",
+        "description": "Secure systems for validating promo codes from receipts or product packaging."
+      },
+      "prizeManagement": {
+        "title": "Prize Management",
+        "description": "End-to-end prize fulfillment, from winner selection to delivery logistics."
+      },
+      "analytics": {
+        "title": "Analytics & Reporting",
+        "description": "Comprehensive campaign analytics and performance reporting to measure ROI."
+      },
+      "compliance": {
+        "title": "Compliance Management",
+        "description": "Ensuring all promotional activities comply with relevant laws and regulations."
+      }
+    }
+  },
+  "about": {
+    "title": "About Firma X",
+    "subtitle": "Your Partner in Promotional Excellence",
+    "description": "Firma X is a leading promotional marketing agency specializing in creating engaging campaigns that drive customer participation and brand loyalty. We combine creative strategy with technical expertise to deliver seamless promotional experiences.",
+    "benefits": {
+      "expertise": "10+ years of promotional marketing expertise",
+      "campaigns": "Successful campaigns for over 200 brands",
+      "creativeTeam": "Award-winning creative team",
+      "techIntegration": "Seamless technology integration",
+      "campaignManagement": "Comprehensive campaign management",
+      "support": "Dedicated support throughout your campaign"
+    }
+  },
+  "contact": {
+    "title": "Ready to Launch Your Next Promotional Campaign?",
+    "description": "Get in touch with our team to discuss your promotional marketing needs. We'll help you create a campaign that drives results.",
+    "form": {
+      "title": "Get a Quote",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your promotional campaign needs",
+      "submit": "Submit Request"
+    }
+  }
+}
+

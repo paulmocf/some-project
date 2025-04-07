@@ -1,14 +1,19 @@
+"use client"
+
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
+import {useTranslation} from "react-i18next";
 
 export function AboutSection() {
+    const { t } = useTranslation();
+
     const benefits = [
-        "10+ years of promotional marketing expertise",
-        "Successful campaigns for over 200 brands",
-        "Award-winning creative team",
-        "Seamless technology integration",
-        "Comprehensive campaign management",
-        "Dedicated support throughout your campaign",
+        t("about.benefits.expertise"),
+        t("about.benefits.campaigns"),
+        t("about.benefits.creativeTeam"),
+        t("about.benefits.techIntegration"),
+        t("about.benefits.campaignManagement"),
+        t("about.benefits.support"),
     ]
 
     return (
@@ -16,14 +21,12 @@ export function AboutSection() {
             <div className="container px-4 md:px-6">
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <div className="space-y-4">
-                        <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800">About Firma X</div>
+                        <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800">{t("about.title")}</div>
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                            Your Partner in Promotional Excellence
+                            {t("about.subtitle")}
                         </h2>
                         <p className="text-muted-foreground md:text-xl">
-                            Firma X is a leading promotional marketing agency specializing in creating engaging campaigns that drive
-                            customer participation and brand loyalty. We combine creative strategy with technical expertise to deliver
-                            seamless promotional experiences.
+                            {t("about.description")}
                         </p>
                         <div className="grid grid-cols-1 gap-2 pt-4 md:grid-cols-2">
                             {benefits.map((benefit, index) => (
