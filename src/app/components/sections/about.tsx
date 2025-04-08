@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image"
-import { CheckCircle } from "lucide-react"
+import {CheckCircle} from "lucide-react"
 import {useTranslation} from "react-i18next";
 
-export function AboutSection() {
+export function About() {
     const { t } = useTranslation();
 
     const benefits = [

@@ -3,9 +3,11 @@
 import {Button} from "@/components/ui/button";
 import {ArrowRight} from "lucide-react";
 import {useTranslation} from "react-i18next";
+import React from "react";
+import handleSmoothScrolling from "@/lib/handleSmoothScrolling";
 
-export function HeroSection() {
-    const { t } = useTranslation()
+export function Hero() {
+    const {t} = useTranslation()
     return (
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
             <div className="absolute inset-0 hero-gradient z-[-1]"></div>
@@ -20,11 +22,15 @@ export function HeroSection() {
                         </p>
                     </div>
                     <div className="space-x-4">
-                        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
-                            {t("hero.startCampaign")} <ArrowRight className="ml-2 h-4 w-4" />
+                        <Button size="lg"
+                                className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
+                            <a href="#contact" onClick={handleSmoothScrolling()}>{t("hero.startCampaign")}</a>
+                            <ArrowRight className="ml-2 h-4 w-4"/>
                         </Button>
                         <Button variant="outline" size="lg">
-                            {t("hero.learnMore")}
+                            <a href="#about" onClick={handleSmoothScrolling()}>
+                                {t("hero.learnMore")}
+                            </a>
                         </Button>
                     </div>
                 </div>

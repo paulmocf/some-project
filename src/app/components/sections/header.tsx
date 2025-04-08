@@ -3,12 +3,13 @@
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import React, {useState} from "react";
-import {ThemeToggler} from "@/app/components/ThemeToggler";
+import {ThemeToggler} from "@/app/components/togglers/theme-toggler";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {Menu} from "lucide-react";
 import '@/lib/i18n/i18n'
 import {useTranslation} from "react-i18next";
-import {LanguageSwitcher} from "@/app/components/language-switcher";
+import {LanguageToggler} from "@/app/components/togglers/language-toggler";
+import handleSmoothScrolling from "@/lib/handleSmoothScrolling";
 
 
 export default function Header() {
@@ -23,24 +24,12 @@ export default function Header() {
         {name: t("navbar.contact"), href: "#contact"},
     ]
 
-    function getOnClick() {
-        return (event: React.SyntheticEvent) => {
-            event.preventDefault();
+
+
+    function handleClick() {
+        return (e: React.SyntheticEvent) => {
+            handleSmoothScrolling()(e)
             setIsOpen(false)
-            const target = event.target as HTMLAnchorElement;
-            const id = target.getAttribute('href')?.replace('#', '');
-            const element = document.getElementById(String(id));
-            const navbar = document.getElementById('aaa'); // Ia înălțimea navbarului
-
-            if (element) {
-                const navbarHeight = navbar?.offsetHeight ?? 0; // Obține înălțimea navbarului (fallback la 0)
-                const targetPosition = element.offsetTop - navbarHeight; // Ajustează poziția de scroll
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-
         };
     }
 
@@ -59,7 +48,10 @@ export default function Header() {
                     {navItems.map((item) => (
                         <a key={item.name} href={item.href}
                            className="text-sm font-medium transition-colors hover:text-blue-600"
-                           onClick={getOnClick()}>
+                           onClick={(e) => {
+                               handleSmoothScrolling()(e)
+                               setIsOpen(false)
+                           }}>
                             {item.name}
                         </a>
                     ))}
@@ -67,7 +59,7 @@ export default function Header() {
 
                 <div className="hidden md:flex items-center gap-5">
                     <ThemeToggler/>
-                    <LanguageSwitcher/>
+                    <LanguageToggler/>
                     <Button><a href="#contact">Contact</a></Button>
                 </div>
 
@@ -86,7 +78,7 @@ export default function Header() {
                                 <a
                                     key={item.name}
                                     className="text-lg font-medium transition-colors hover:text-blue-600"
-                                    onClick={getOnClick()}
+                                    onClick={handleClick()}
                                     href={item.href}>
                                     {item.name}
                                 </a>
@@ -95,7 +87,7 @@ export default function Header() {
 
                         <div className="flex items-center justify-center ">
                             <ThemeToggler/>
-                            <LanguageSwitcher/>
+                            <LanguageToggler/>
                         </div>
                     </SheetContent>
                 </Sheet>

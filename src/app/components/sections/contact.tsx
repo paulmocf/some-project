@@ -6,7 +6,7 @@ import {Textarea} from "@/components/ui/textarea"
 import {Mail, MapPin, Phone} from "lucide-react"
 import {useTranslation} from "react-i18next";
 
-export function ContactSection() {
+export function Contact() {
     const { t } = useTranslation()
 
     return (

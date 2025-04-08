@@ -4,7 +4,7 @@ import {Award, BarChart4, Code, Gift, Megaphone, ShieldCheck} from "lucide-react
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
 import {useTranslation} from "react-i18next";
 
-export function ServicesSection() {
+export function Services() {
     const {t} = useTranslation()
 
     const services = [
@@ -46,7 +46,7 @@ export function ServicesSection() {
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
-                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">                                {t("services.title")}</h2>
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{t("services.title")}</h2>
                             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                                 {t("services.description")}
                             </p>

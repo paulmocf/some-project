@@ -1,15 +1,15 @@
-import {HeroSection} from "@/app/components/HeroSection";
-import {ServicesSection} from "@/app/components/ServicesSection";
-import {ContactSection} from "@/app/components/contact";
-import {AboutSection} from "@/app/components/about";
+import {Hero} from "@/app/components/sections/hero";
+import {Services} from "@/app/components/sections/services";
+import {Contact} from "@/app/components/sections/contact";
+import {About} from "@/app/components/sections/about";
 
 export default function Home() {
     return (
         <>
-            <HeroSection/>
-            <ServicesSection/>
-            <AboutSection/>
-            <ContactSection/>
+            <Hero/>
+            <Services/>
+            <About/>
+            <Contact/>
         </>
     );
 }
