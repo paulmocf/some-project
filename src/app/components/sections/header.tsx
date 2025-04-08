@@ -17,7 +17,7 @@ export default function Header() {
     const {t} = useTranslation();
 
     const navItems = [
-        {name: t("navbar.home"), href: "#home"},
+        {name: t("navbar.home"), href: "#hero"},
         {name: t("navbar.services"), href: "#services"},
         {name: t("navbar.about"), href: "#about"},
         // {name: "Case Studies", href: "#case-studies"},
@@ -34,7 +34,7 @@ export default function Header() {
     }
 
     return (
-        <header id="aaa"
+        <header id="navbar"
                 className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-2">
@@ -48,10 +48,7 @@ export default function Header() {
                     {navItems.map((item) => (
                         <a key={item.name} href={item.href}
                            className="text-sm font-medium transition-colors hover:text-blue-600"
-                           onClick={(e) => {
-                               handleSmoothScrolling()(e)
-                               setIsOpen(false)
-                           }}>
+                           onClick={handleClick()}>
                             {item.name}
                         </a>
                     ))}

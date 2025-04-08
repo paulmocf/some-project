@@ -1,7 +1,7 @@
 "use client"
 
 import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
+import {initReactI18next} from "react-i18next"
 import LanguageDetector from "i18next-browser-languagedetector"
 
 // Import translations
@@ -27,7 +27,7 @@ i18n
     .init({
         resources,
         fallbackLng: "ro",
-        lng:"ro",
+        lng:"ro", //TODO: ramane asa?
         debug: process.env.NODE_ENV === "development",
 
         interpolation: {

@@ -9,7 +9,7 @@ import handleSmoothScrolling from "@/lib/handleSmoothScrolling";
 export function Hero() {
     const {t} = useTranslation()
     return (
-        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section id="hero" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
             <div className="absolute inset-0 hero-gradient z-[-1]"></div>
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center space-y-4 text-center">
