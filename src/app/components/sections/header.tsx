@@ -25,7 +25,6 @@ export default function Header() {
     ]
 
 
-
     function handleClick() {
         return (e: React.SyntheticEvent) => {
             handleSmoothScrolling()(e)
@@ -57,7 +56,7 @@ export default function Header() {
                 <div className="hidden md:flex items-center gap-5">
                     <ThemeToggler/>
                     <LanguageToggler/>
-                    <Button><a href="#contact">Contact</a></Button>
+                    <Button className="btn-primary"><a href="#contact">Contact</a></Button>
                 </div>
 
                 {/* Mobile Navigation */}

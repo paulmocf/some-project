@@ -22,9 +22,10 @@ export function About() {
                 <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                     <div className="space-y-4">
                         <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800">{t("about.title")}</div>
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-300 dark:to-indigo-300">
                             {t("about.subtitle")}
                         </h2>
+                        <div className="h-1 w-20 my-4 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full"></div>
                         <p className="text-muted-foreground md:text-xl">
                             {t("about.description")}
                         </p>
