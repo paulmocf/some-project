@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function handleSmoothScrolling(event: React.SyntheticEvent) {
+    console.log("aaa");
+    console.log(event.target)
     event.preventDefault();
     const target = event.target as HTMLAnchorElement;
     const id = target.getAttribute('href')?.replace('#', '');

@@ -2,8 +2,7 @@
 
 import {useTranslation} from "react-i18next";
 import React from "react";
-import {Button} from "@/components/ui/button";
-import {ArrowRight} from "lucide-react";
+import {ArrowDown} from "lucide-react";
 import handleSmoothScrolling from "@/lib/handleSmoothScrolling";
 
 export function Hero() {
@@ -22,16 +21,19 @@ export function Hero() {
                         </p>
                     </div>
                     <div className="space-x-4">
-                        <Button size="lg"
-                                className="btn-primary">
-                            <a href="#contact" onClick={handleSmoothScrolling}>{t("hero.startCampaign")}</a>
-                            <ArrowRight className="ml-2 h-4 w-4"/>
-                        </Button>
-                        <Button variant="outline" size="lg">
-                            <a href="#about" onClick={handleSmoothScrolling}>
-                                {t("hero.learnMore")}
-                            </a>
-                        </Button>
+                        <a href="#contact"
+                           onClick={handleSmoothScrolling}
+                           className="btn-primary font-bold inline-flex items-center px-6 py-2.5 text-sm rounded-md text-white dark:text-black"
+                        >
+                            {t("hero.startCampaign")}
+                            <ArrowDown className="ml-2 h-4 w-4"/>
+                        </a>
+                        <a href="#about"
+                           onClick={handleSmoothScrolling}
+                           className="px-6 py-2.5  inline-flex items-center text-sm font-bold rounded-md border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+                        >
+                            {t("hero.learnMore")}
+                        </a>
                     </div>
                 </div>
             </div>
