@@ -24,11 +24,11 @@ export function Hero() {
                     <div className="space-x-4">
                         <Button size="lg"
                                 className="btn-primary">
-                            <a href="#contact" onClick={handleSmoothScrolling()}>{t("hero.startCampaign")}</a>
+                            <a href="#contact" onClick={handleSmoothScrolling}>{t("hero.startCampaign")}</a>
                             <ArrowRight className="ml-2 h-4 w-4"/>
                         </Button>
                         <Button variant="outline" size="lg">
-                            <a href="#about" onClick={handleSmoothScrolling()}>
+                            <a href="#about" onClick={handleSmoothScrolling}>
                                 {t("hero.learnMore")}
                             </a>
                         </Button>

@@ -25,11 +25,9 @@ export default function Header() {
     ]
 
 
-    function handleClick() {
-        return (e: React.SyntheticEvent) => {
-            handleSmoothScrolling()(e)
+    function handleClick(e: React.SyntheticEvent) {
+            handleSmoothScrolling(e)
             setIsOpen(false)
-        };
     }
 
     return (
@@ -47,7 +45,7 @@ export default function Header() {
                     {navItems.map((item) => (
                         <a key={item.name} href={item.href}
                            className="text-sm font-medium transition-colors hover:text-blue-600"
-                           onClick={handleClick()}>
+                           onClick={handleClick}>
                             {item.name}
                         </a>
                     ))}
@@ -74,7 +72,7 @@ export default function Header() {
                                 <a
                                     key={item.name}
                                     className="text-lg font-medium transition-colors hover:text-blue-600"
-                                    onClick={handleClick()}
+                                    onClick={handleClick}
                                     href={item.href}>
                                     {item.name}
                                 </a>
