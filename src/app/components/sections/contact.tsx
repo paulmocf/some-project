@@ -43,32 +43,32 @@ export function Contact() {
                                     <label htmlFor="first-name" className="text-sm font-medium">
                                         {t("contact.form.firstName")}
                                     </label>
-                                    <Input id="first-name" placeholder="John"/>
+                                    <Input id="first-name" placeholder={t("contact.form.placeholders.firstName")}/>
                                 </div>
                                 <div className="space-y-2">
                                     <label htmlFor="last-name" className="text-sm font-medium">
                                         {t("contact.form.lastName")}
                                     </label>
-                                    <Input id="last-name" placeholder="Doe"/>
+                                    <Input id="last-name" placeholder={t("contact.form.placeholders.lastName")}/>
                                 </div>
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="email" className="text-sm font-medium">
                                     {t("contact.form.email")}
                                 </label>
-                                <Input id="email" type="email" placeholder="john.doe@example.com"/>
+                                <Input id="email" type="email" placeholder={t("contact.form.placeholders.email")}/>
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="company" className="text-sm font-medium">
                                     {t("contact.form.company")}
                                 </label>
-                                <Input id="company" placeholder="Your Company"/>
+                                <Input id="company" placeholder={t("contact.form.placeholders.company")}/>
                             </div>
                             <div className="space-y-2">
                                 <label htmlFor="message" className="text-sm font-medium">
                                     {t("contact.form.message")}
                                 </label>
-                                <Textarea id="message" placeholder="Tell us about your promotional campaign needs"/>
+                                <Textarea id="message" placeholder={t("contact.form.placeholders.message")}/>
                             </div>
                             <Button className="w-full bg-blue-600 hover:bg-blue-700">{t("contact.form.submit")}</Button>
                         </div>

@@ -20,7 +20,7 @@ export function Hero() {
                             {t("hero.description")}
                         </p>
                     </div>
-                    <div className="space-x-4">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                         <a href="#contact"
                            onClick={handleSmoothScrolling}
                            className="btn-primary font-bold inline-flex items-center px-6 py-2.5 text-sm rounded-md text-white dark:text-black"
@@ -30,7 +30,7 @@ export function Hero() {
                         </a>
                         <a href="#about"
                            onClick={handleSmoothScrolling}
-                           className="px-6 py-2.5  inline-flex items-center text-sm font-bold rounded-md border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+                           className="px-6 py-2.5 inline-flex items-center text-sm font-bold rounded-md border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
                         >
                             {t("hero.learnMore")}
                         </a>

@@ -71,8 +71,14 @@
       "email": "Email",
       "company": "Companie",
       "message": "Mesaj",
-      "messagePlaceholder": "Spuneți-ne despre nevoile dvs. pentru campania promoțională",
-      "submit": "Trimite cererea"
+      "submit": "Trimite cererea",
+      "placeholders": {
+        "firstName": "Ion",
+        "lastName": "Popescu",
+        "email": "ion.popescu@example.com",
+        "company": "Numele companiei dvs.",
+        "message": "Spuneți-ne despre nevoile dvs. pentru campania promoțională"
+      }
     }
   }
 }

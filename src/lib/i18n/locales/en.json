@@ -71,8 +71,14 @@
       "email": "Email",
       "company": "Company",
       "message": "Message",
-      "messagePlaceholder": "Tell us about your promotional campaign needs",
-      "submit": "Submit Request"
+      "submit": "Submit Request",
+      "placeholders": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "company": "Your company's name",
+        "message": "Tell us about your promotional campaign needs"
+      }
     }
   }
 }
