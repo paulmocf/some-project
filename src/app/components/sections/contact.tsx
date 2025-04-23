@@ -1,10 +1,8 @@
 "use client"
 
-import {Button} from "@/components/ui/button"
-import {Input} from "@/components/ui/input"
-import {Textarea} from "@/components/ui/textarea"
 import {Mail, MapPin, Phone} from "lucide-react"
 import {useTranslation} from "react-i18next";
+import ContactForm from "@/app/components/sections/components/ContactForm";
 
 export function Contact() {
     const { t } = useTranslation()
@@ -35,44 +33,7 @@ export function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className="space-y-4 bg-white text-black p-6 rounded-lg">
-                        <h3 className="text-xl font-bold">{t("contact.form.title")}</h3>
-                        <div className="grid gap-4">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="space-y-2">
-                                    <label htmlFor="first-name" className="text-sm font-medium">
-                                        {t("contact.form.firstName")}
-                                    </label>
-                                    <Input id="first-name" placeholder={t("contact.form.placeholders.firstName")}/>
-                                </div>
-                                <div className="space-y-2">
-                                    <label htmlFor="last-name" className="text-sm font-medium">
-                                        {t("contact.form.lastName")}
-                                    </label>
-                                    <Input id="last-name" placeholder={t("contact.form.placeholders.lastName")}/>
-                                </div>
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-sm font-medium">
-                                    {t("contact.form.email")}
-                                </label>
-                                <Input id="email" type="email" placeholder={t("contact.form.placeholders.email")}/>
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="company" className="text-sm font-medium">
-                                    {t("contact.form.company")}
-                                </label>
-                                <Input id="company" placeholder={t("contact.form.placeholders.company")}/>
-                            </div>
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-medium">
-                                    {t("contact.form.message")}
-                                </label>
-                                <Textarea id="message" placeholder={t("contact.form.placeholders.message")}/>
-                            </div>
-                            <Button className="w-full bg-blue-600 hover:bg-blue-700">{t("contact.form.submit")}</Button>
-                        </div>
-                    </div>
+                    <ContactForm/>
                 </div>
             </div>
         </section>

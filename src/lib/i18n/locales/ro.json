@@ -78,6 +78,28 @@
         "email": "ion.popescu@example.com",
         "company": "Numele companiei dvs.",
         "message": "Spuneți-ne despre nevoile dvs. pentru campania promoțională"
+      },
+      "zod-errors": {
+        "firstName": {
+          "min": "Prenumele trebuie să conțină cel puțin 2 caractere.",
+          "max": "Prenumele nu poate depăși 255 de caractere."
+        },
+        "lastName": {
+          "min": "Numele trebuie să conțină cel puțin 2 caractere.",
+          "max": "Numele nu poate depăși 255 de caractere."
+        },
+        "email": {
+          "min": "Adresa de email trebuie să conțină cel puțin 2 caractere.",
+          "max": "Adresa de email nu poate depăși 255 de caractere."
+        },
+        "company": {
+          "min": "Numele companiei trebuie să conțină cel puțin 2 caractere.",
+          "max": "Numele companiei nu poate depăși 255 de caractere."
+        },
+        "message": {
+          "min": "Mesajul trebuie să conțină cel puțin 10 caractere.",
+          "max": "Mesajul nu poate depăși 255 de caractere."
+        }
       }
     }
   }
