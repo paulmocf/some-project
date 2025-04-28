@@ -72,6 +72,11 @@
       "company": "Company",
       "message": "Message",
       "submit": "Submit Request",
+      "submitted": {
+        "success": "Form submitted successfully!",
+        "error": "An error occurred while submitting the form. Please try again.",
+        "button": "Sending..."
+      },
       "placeholders": {
         "firstName": "John",
         "lastName": "Doe",

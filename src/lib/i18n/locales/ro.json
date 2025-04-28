@@ -72,6 +72,11 @@
       "company": "Companie",
       "message": "Mesaj",
       "submit": "Trimite cererea",
+      "submitted": {
+        "success": "Formularul a fost trimis cu succes!",
+        "error": "A apărut o eroare la trimiterea formularului. Te rugăm să încerci din nou.",
+        "button": "Se trimite..."
+      },
       "placeholders": {
         "firstName": "Ion",
         "lastName": "Popescu",

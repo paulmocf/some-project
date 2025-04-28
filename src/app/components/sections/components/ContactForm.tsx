@@ -8,7 +8,10 @@ import {Input} from "@/components/ui/input"
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {useTranslation} from "react-i18next";
+import {useState} from "react";
+import {toast, Toaster} from "react-hot-toast";
 import {sendEmail} from "@/app/components/sections/components/sendEmail";
+import {Loader2} from "lucide-react";
 
 
 // 2. Define a submit handler.
@@ -36,6 +39,7 @@ export const getFormSchema = (t: (key: string) => string) => {
 
 export default function ContactForm() {
     const {t} = useTranslation()
+    const [isLoading, setIsLoading] = useState(false);
 
     // 1. Define your form.
     const form = useForm<z.infer<ReturnType<typeof getFormSchema>>>({
@@ -50,16 +54,26 @@ export default function ContactForm() {
         },
     })
 
+    async function submitForm(values: z.infer<ReturnType<typeof getFormSchema>>) {
+        setIsLoading(true);
+        const {error} = await sendEmail(values)
+        form.reset();
+
+        if (error) {
+            toast.error(t("contact.form.submitted.error"))
+        } else {
+            toast.success(t("contact.form.submitted.success"))
+        }
+        setIsLoading(false)
+    }
+
     return (
         <div className="space-y-4 bg-white text-black p-6 rounded-lg">
             <h3 className="text-xl font-bold">{t("contact.form.title")}</h3>
             <div className="grid gap-4">
-
+                <Toaster position="bottom-right"/>
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(async (values) => {
-                        await sendEmail(values);
-                        form.reset();
-                    })} className="space-y-8">
+                    <form onSubmit={form.handleSubmit(submitForm)} className="space-y-8">
                         <FormField
                             control={form.control}
                             name="firstName"
@@ -126,9 +140,14 @@ export default function ContactForm() {
                             )}
                         />
                         <Button className="bg-blue-600 hover:bg-blue-700"
-                                disabled={!form.formState.isValid}
+                                disabled={!form.formState.isValid || isLoading}
                         >
-                            {t("contact.form.submit")}
+                            {isLoading ? (
+                                <>
+                                    <Loader2 className="mr-2 h-4 w-4 animate-spin"/>
+                                    {t("contact.form.submitted.button")}
+                                </>
+                            ) : t("contact.form.submit")}
                         </Button>
                     </form>
                 </Form>
