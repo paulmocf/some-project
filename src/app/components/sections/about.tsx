@@ -38,13 +38,12 @@ export function About() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="relative w-full max-w-md h-[250px]">
                         <Image
-                            src="/some-project/window.svg?height=400&width=600"
-                            alt="Firma X team working on promotional campaigns"
-                            width={600}
-                            height={400}
-                            className="rounded-lg object-cover shadow-lg"
+                            src="/window.svg"
+                            alt="Becoming Digital team working on promotional campaigns"
+                            fill
+                            className="object-contain rounded-lg"
                         />
                     </div>
                 </div>
